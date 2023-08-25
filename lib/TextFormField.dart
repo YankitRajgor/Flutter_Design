@@ -30,7 +30,8 @@ class _Textfield_ScreenState extends State<Textfield_Screen> {
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
                       focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.green, width: 2)),
+                          borderSide:
+                              BorderSide(color: Colors.green, width: 2)),
                       labelText: 'Number',
                     ),
                     validator: (value) {

@@ -8,7 +8,7 @@ class Slider_Screen extends StatefulWidget {
 }
 
 class _Slider_ScreenState extends State<Slider_Screen> {
-  int _value = 6;
+  int _value = 50;
 
   @override
   Widget build(BuildContext context) {
@@ -35,17 +35,14 @@ class _Slider_ScreenState extends State<Slider_Screen> {
                       child: Slider(
                     value: _value.toDouble(),
                     min: 1.0,
-                    max: 40.0,
-                    divisions: 20,
-                    activeColor: Colors.red,
-                    inactiveColor: Colors.yellow,
+                    max: 100.0,
+                    // divisions: 20,
+                    // activeColor: Colors.blue,
+                    // inactiveColor: Colors.grey,
                     onChanged: (double newValue) {
                       setState(() {
                         _value = newValue.round();
                       });
-                    },
-                    semanticFormatterCallback: (double newValue) {
-                      return '${newValue.round()}dollars';
                     },
                   ))
                 ],
